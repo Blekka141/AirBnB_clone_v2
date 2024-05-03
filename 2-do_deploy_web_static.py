@@ -1,7 +1,3 @@
-
-env.hosts = ["54.236.8.64", "100.24.72.30"]
-env.user = 'ubuntu'  """Username for SSH"""
-
 #!/usr/bin/python3
 """
 Fabric script based on the file 2-do_deploy_web_static.py that creates and
