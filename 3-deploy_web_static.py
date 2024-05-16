@@ -7,7 +7,7 @@ from fabric.api import put
 from fabric.api import run
 
 env.hosts = ["54.236.8.64", "100.24.72.30"]
-env.user = 'ubuntu'  """Username for SSH"""
+
 
 
 def do_pack():
