@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HBNB</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/3-header.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/3-footer.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/4-common.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/6-filters.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+            </div>
+        </div>
+    </header>
+    <section class="filters">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>States</h3>
+                    <h4>&nbsp;</h4>
+                    <ul>
+                        {% for state in states %}
+                        <li>{{ state.name }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Amenities</h3>
+                    <h4>&nbsp;</h4>
+                    <ul>
+                        {% for amenity in amenities %}
+                        <li>{{ amenity.name }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/icon.png') }}" alt="Icon">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
